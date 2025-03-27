@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Counseling and Psychological Services (CAPS)</title>
+    <style>
+        body {
+            visibility: hidden; /* Hide body content initially so that content would load only after system determines light or dark mode. prevent colour flickers*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class = "skip" href="#main">Skip to Main content</a>
+        <img class = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "academic_support.html">Tutoring</a></li>
+                <li class="active" aria-current="page"><a href = "caps.html">Wellness</a></li>
+                <li><a href = "food_pantry.html">Food</a></li>
+            </ul>
+        </nav>
+        <h1>Counseling and Psychological Services (CAPS)</h1>
+
+        <!-- dark mode button -->
+        <button onclick="myFunction()">Switch to dark mode</button>
+
+    </header>
+    <main id = "main">
+        <section>
+            <h2>Who are we</h2>
+            <p>Counseling and Psychological Services (CAPS) is an agency dedicated to fostering students' psychological development and emotional well-being. It provides counseling and psychotherapy, preventive and educational programs, consultation and outreach services, and contributes to the advancement of the mental health field.
+            </p>
+            <img src="images/Michigan_Union.jpg" alt="Sign that reads Michigan Union, with building behind">
+            <figcaption>Michigan Union</figcaption>
+        </section>
+        <section>
+            <h2>Make an initial consultation</h2>
+            <h3>Schedule online</h3>
+            <p><a href="https://umichcaps.titaniumhwc.com/Hwc/" target="_blank">Make an appointment</a> online.</p>
+            <h3>Email us</h3>
+            <p>Email our virtual front desk at <a href="mailto:caps-uofm@umich.edu">caps-uofm@umich.edu</a>
+            <br><br>
+            Please take note that, excluding holidays and breaks, email is only checked weekdays from 8 a.m. to 5 p.m.
+            </p>
+            <h3>Call us</h3>
+            <p>734-764-8312</p>
+            <p><strong>I need urgent support, what should I do?</strong><br>
+            Access <a href="https://caps.umich.edu/article/urgent-support" target="_blank"> urgent support resources</a>.
+            </p>
+        </section>
+        <section>
+            <h2>Where to find us</h2>
+            <h3>Location:</h3>
+            <p>
+            Address: Michigan Union <br>
+            530 South State Street, Suite 4079 <br>
+            Ann Arbor, MI 48109
+            <br><br>
+            Additionally, CAPS has <a href="https://caps.umich.edu/article/caps-embedded-staff" target="_blank">embedded staff</a>  located in different Schools and Colleges at U-M.
+            <br></p>
+            <h3>Contact:</h3>
+            <p>Phone: <a href="tel:7347648312">734-764-8312</a> (24hrs)<br>
+            Email: <a href="mailto:caps-uofm@umich.edu">caps-uofm@umich.edu</a></p>
+            <h3>Hours of Operation:</h3>
+            <ul>
+                <li>Monday - Thursday: 8am-6pm</li>
+                <li>Friday: 8am-5pm</li>
+                <li>Saturday - Sunday: Closed</li>
+            </ul>
+            <br>
+        <p>Note: CAPS phone hotline is available 24/7</p>
+        <p><strong>If you need emergency assistance, please call 911 or go to your nearest emergency room.</strong></p>
+        <p>Access <a href="https://caps.umich.edu/article/other-emergency-assistance" target="_blank"> crisis service hotlines</a>.</p>
+        </section>
+        <section>
+            <h2>Need help?</h2>
+            <h3>FAQs</h3>
+            <h4>Who is eligible to for consulting?</h4>
+            <p>Any currently enrolled U-M Ann Arbor students are eligible.</p>
+            <h4>How much do services cost?</h4>
+            <p>There are no fees for our services.</p>
+            <h4>Is this confidential?</h4>
+            <p>CAPS complies with state and federal regulations as well as all professional norms when it comes to securing your information. See our <a href="https://caps.umich.edu/article/special-note-regarding-confidentiality" target="_blank">Confidentiality Information</a> for more details. </p>
+            <h4>Will my sessions be noted in my official student record?</h4>
+            <p>No, definitely not.</p>
+            <h4>How long will each appointment be?</h4>
+            <p>Each consultation is scheduled for 45 minutes.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© Copyrights <span id="year"></span> MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources" target="_blank">UMSI Academic Advising </a></p>
+    </footer>
+
+<!-- Dark mode code from ChatGPT-->
+<script src="js/darkmode.js"></script>
+
+<!-- Year update code from https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+
+</body>
+</html>

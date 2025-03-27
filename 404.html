@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>404 Error Page</title>
+    <style>
+        body {
+            visibility: hidden; /* Hide body content initially so that content would load only after system determines light or dark mode. prevent colour flickers*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class = "skip" href="#main">Skip to Main content</a>
+        <img class = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "academic_support.html">Tutoring</a></li>
+                <li><a href = "caps.html">Wellness</a></li>
+                <li><a href = "food_pantry.html">Food</a></li>
+            </ul>
+        </nav>
+        <h1>Something's not right</h1>
+
+        <!-- dark mode button -->
+        <button onclick="myFunction()">Switch to dark mode</button>
+
+    </header>
+    <main id = "main">
+        <section>
+            <h2>This page doesn't exist.</h2>
+            <h3>Are you looking for:</h3>
+            <p><a href="academic_support.html" target="_self">Help with your academic work</a><br><a href="caps.html" target="_self">Support for your mental well-being</a><br><a href="food_pantry.html" target="_self">Emergency food supplies</a></p>
+        </section>
+        <br>
+    </main>
+    <footer>
+        <p>© Copyrights <span id="year"></span> MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources" target="_blank">UMSI Academic Advising </a></p>
+        </footer>
+
+<!-- Dark mode code from ChatGPT-->
+<script src="js/darkmode.js"></script>
+
+<!-- Year update code from https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+
+</body>
+</html>

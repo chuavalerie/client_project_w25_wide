@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Student Success Portal Home</title>
+    <style>
+        body {
+            visibility: hidden; /* Hide body content initially so that content would load only after system determines light or dark mode. prevent colour flickers*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class = "skip" href="#main">Skip to Main content</a>
+        <img class = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li class="active" aria-current="page"><a href = "index.html">Home</a></li>
+                <li><a href = "academic_support.html">Tutoring</a></li>
+                <li><a href = "caps.html">Wellness</a></li>
+                <li><a href = "food_pantry.html">Food</a></li>
+            </ul>
+        </nav>
+        <h1>Student Success Portal</h1>
+
+        <!-- dark mode button -->
+        <button onclick="myFunction()">Switch to dark mode</button>
+
+    </header>
+    <main id = "main">
+        <section>
+            <h2>Welcome to the UM Grad Success Navigator</h2>
+            <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
+            <p>This guide is set up to help you be successful inside and outside of the classroom, and support you in finding resources available to them on campus.
+            </p>
+        </section>
+    <div>
+        <article>
+            <h3>Enhance academic success</h3>
+            <p>Maximize your academic success at UM. Here are some resources to help support your studies:</p>
+            <ul>
+                <li><strong>Sweetland Writing Center:</strong> Check out writing courses, workshops and peer consultation for undergraduates and graduates.</li>
+                <li><strong>English Language Institute:</strong> Takes courses to prepare you to teach English as a second or foreign language.</li>
+                <li><strong>Success Coaching:</strong> Gain support with time management, study skills, and campus resources beyond advising.</li>
+                <li><strong>Services for Students with Disabilities:</strong> Access workshops, coaching and other educational intiatives to develop learning strategies.</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Improve school/life balance</h3>
+            <p>Graduate school is more than just academics. Cultivating a balanced life is crucial. To help you enjoy life outside of the classroom, consider the following resources:</p>
+            <ul>
+                <li><strong>Student Organizations:</strong> Join one of the many student organizations to meet peers with similar interests and passions.</li>
+                <li><strong>Arts and Culture:</strong> With events, exhibits, and performances taking place all year long, discover UM's thriving arts scene.</li>
+                <li><strong>Career Services:</strong> Get ready for your professional future by utilizing networking opportunities, career counseling, and job search tools.</li>
+                <li><strong>Community Engagement:</strong> Participate in community service initiatives and volunteer opportunities in your area.</li>
+                <li><strong>Housing and Dining:</strong> Find out about UM on-campus housing options and dining services.</li>
+            </ul>
+                <figure>
+                    <img src="images/Music.jpg.jpg" alt="Three students performing while singing and playing musical instruments.">
+                    <figcaption>UMSI out in the fall!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Dining.jpg" alt="Two Mdining staff serving food to a queue of students.">
+                    <figcaption>UMSI out in the fall!</figcaption>
+                </figure>
+        </article>
+        <article>
+            <h3>Access resources in times of crisis</h3>
+            <h4>Physical Health</h4>
+            <p>A healthy body is key for success. Check out resources  available from the University of Michigan to assist you in maintaining optimal physical health:</p>
+            <ul>
+                <li><strong>Recreational Sports:</strong> Stay active and healthy by joining fitness programs, sports clubs or use gym's amenities.</li>
+                <li><strong>University Health Service (UHS):</strong> Access comprehensive medical care, including regular check-ups, vaccinations, and specialist referrals.</li>
+            </ul>
+            <figure>
+                <img src="images/UHS.jpg" alt="University Health Services building">
+                <figcaption>University Health Services Building</figcaption>
+            </figure>
+            <h4>Mental Health</h4>
+            <p>Keeping your mental health in check is essential to succeeding in graduate school. The following resources can help you with your mental health:</p>
+            <ul>
+                <li><strong>Counseling and Psychological Services (CAPS):</strong> Get crisis intervention programs, classes, group therapy, and individual counseling.</li>
+                <li><strong>Wellness Coaching:</strong> Develop well-being management techniques with a wellness coach to combat stress.</li>
+                <li><strong>Mindfulness Resources:</strong> Develop a quiet and concentrated mind through mindfulness and meditation exercises.</li>
+                <li><strong>Peer Support Groups:</strong> Participate in peer support groups to learn about common experiences and coping mechanisms.</li>
+            </ul>
+        </article>
+    </div>
+    </main>
+    <footer>
+        <p>© Copyrights <span id="year"></span> MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources" target="_blank">UMSI Academic Advising </a></p>
+        </footer>
+
+<!-- Dark mode code from ChatGPT-->
+<script src="js/darkmode.js"></script>
+
+<!-- Year update code from https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+
+</body>
+</html>

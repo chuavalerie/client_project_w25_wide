@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Food Pantry</title>
+    <style>
+        body {
+            visibility: hidden; /* Hide body content initially so that content would load only after system determines light or dark mode. prevent colour flickers*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class = "skip" href="#main">Skip to Main content</a>
+        <img class = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "academic_support.html">Tutoring</a></li>
+                <li><a href = "caps.html">Wellness</a></li>
+                <li class="active" aria-current="page"><a href = "food_pantry.html">Food</a></li>
+            </ul>
+        </nav>
+        <h1>Food Pantry</h1>
+
+        <!-- dark mode button -->
+        <button onclick="myFunction()">Switch to dark mode</button>
+
+    </header>
+    <main id = "main">
+        <section>
+            <h2>Who are we</h2>
+            <p>The Maize and Blue Cupboard is a food pantry for the U-M community facing food insecurity. We connect you to immediate resources you require, such as food, household and personal products, as well as educational opportunities and support.
+            </p><br>
+            <img src="images/Maize_and_blue_cupboard.jpg" alt="Interior of Maize & Blue Cupboard">
+            <figcaption>Maize & Blue Cupboard</figcaption>
+        </section>
+        <section>
+            <h2>Make an appointment</h2>
+            <p> You can make a shopping appointment for a time that suits your schedule. Appointments can be made up to two weeks in advance.
+            <br><br><a href="https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2023-10" target="_blank">Make an appointment</a> on calendly.</p>
+        </section>
+        <section>
+            <h2>What we offer</h2>
+            <ol>
+                <li><strong>Food: </strong>Produce, dairy products, meat, bread, and frozen and shelf-stable items (such as tuna, rice, and cans).</li>
+                <li><strong>Kitchen & Cooking: </strong>Pots and pans, Tupperware, cutting boards, knives, silverware, dishes, and other kitchenware.</li>
+                <li><strong>Personal & Household: </strong>Toilet paper, trash bags, cleaning goods, personal care items, school supplies, infant necessities, and more.</li>
+                <li><strong>Support: </strong>Connect with campus experts such as <a href = "caps.html">CAPS</a>, SNAP (Michigan's food program), the Dean of Students and Financial Aid.</li>
+            </ol><br>
+        </section>
+        <section>
+            <h2>Where to find us</h2>
+            <h3>Location:</h3>
+            <figure>
+                <img src="images/Betsy_barbour.jpg" alt="Exterior facade of Betsy Barbour residence hall">
+                <figcaption>Betsy Barbour Residence Hall</figcaption>
+            </figure>
+            <br>
+            <figure>
+                <img src="images/Betsy_barbour_maynard_entrance.png" alt="Arrow pointing to Maynard Entrance leading to Maize & Blue Cupboard">
+                <figcaption>Maynard Entrance</figcaption>
+            </figure>
+            <p>The Maize and Blue Cupboard is located at the basement of the Betsy Barbour Residence Hall. To protect residents' privacy, please only enter through the Maynard entrance.
+            <br><br> If you require ramp or elevator access, kindly get in touch with us.
+            <br>
+            <br>
+            Address: 420 S State St Ann Arbor, MI 48109</p>
+            <h3>Contact:</h3>
+            <p>Phone: <a href="tel:7349362794">734-936-2794</a></p>
+            <h3>Hours of Operation:</h3>
+            <ol>
+                <li>Sunday: 2pm-6pm</li>
+                <li>Monday - Thursday: 3pm-7pm</li>
+                <li>Friday: 12pm-7pm</li>
+                <li>Saturday: closed</li>
+            </ol>
+        </section>
+        <br><br>
+        <section>
+            <h2>Need help?</h2>
+            <h3>FAQs</h3>
+            <h4>Who is eligible to use the food pantry?</h4>
+            <p>Anyone with a valid U-M ID!</p>
+            <h4>Will my financial aid be affected by this?</h4>
+            <p>No, using Blue Cupboard and Maize will not affect your financial aid.</p>
+            <h4>Is this confidential?</h4>
+            <p>Our goal is to protect everyone's dignity, and privacy is at its core. Apart from requesting your U-M ID, no one is verifying the information you provide, and your information will not be shared.</p>
+            <h4>What must I bring with me?</h4>
+            <p>You will need your MCard at every appointment.</p>
+            <h4>Can I walk in without an appointment?</h4>
+            <p>No, we are unable to accept walk-in shopping.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© Copyrights <span id="year"></span> MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources" target="_blank">UMSI Academic Advising </a></p>
+    </footer>
+
+<!-- Dark mode code from ChatGPT-->
+<script src="js/darkmode.js"></script>
+
+<!-- Year update code from https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+
+</body>
+</html>

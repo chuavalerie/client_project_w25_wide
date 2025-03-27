@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>UMSI Tutoring & Academic Support</title>
+    <style>
+        body {
+            visibility: hidden; /* Hide body content initially so that content would load only after system determines light or dark mode. prevent colour flickers*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class = "skip" href="#main">Skip to Main content</a>
+        <img class = "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li class="active" aria-current="page"><a href = "academic_support.html">Tutoring</a></li>
+                <li><a href = "caps.html">Wellness</a></li>
+                <li><a href = "food_pantry.html">Food</a></li>
+            </ul>
+        </nav>
+        <h1>UMSI Tutoring & Academic Support</h1>
+
+        <!-- dark mode button -->
+        <button onclick="myFunction()">Switch to dark mode</button>
+
+    </header>
+    <main id = "main">
+        <section>
+            <h2>Who are we</h2>
+            <p>We are the Academic Success Team at UMSI. Our goal is to help students by connecting students to tutoring and academic support resources.
+            </p>
+        </section>
+        <section>
+            <h2>What we offer</h2>
+            <h3>Programming tutoring</h3>
+            <ol>
+                <li><strong><a href="https://sites.google.com/umich.edu/umsitutoring/umsi-programming-tutoring#h.bmc1reygau8c" target="_blank">UMSI Programming Peer Tutoring</a></strong><br>
+                    <p>Courses include:</p>
+                    <ul>
+                        <li>SI 106 Programs, Information, and People</li>
+                        <li>SI 206 Data-Oriented Programming</li>
+                        <li>SI 506 Programming I</li>
+                        <li>SI 507 Intermediate Programming</li>
+                        <li>General Python support</li>
+                    </ul>
+                </li>
+                <li><strong><a href="https://sites.google.com/umich.edu/umsitutoring/umsi-programming-tutoring#h.rubp6gxxnf" target="_blank">UMSI MADS Programming Peer Tutoring</a></strong><br>
+                    <p>Courses include:</p>
+                    <ul>
+                        <li>SIADS 505 Data Manipulation</li>
+                        <li>General Python support</li>
+                    </ul>
+                </li>
+            </ol>
+            <h3>Math tutoring</h3>
+            <ol>
+                <li><strong><a href="https://sites.google.com/umich.edu/umsitutoring/umsi-programming-tutoring#h.bmc1reygau8c" target="_blank">UMSI Programming Peer Tutoring</a></strong><br>
+                    Subject areas include: <br>
+                    <ul>
+                        <li>Linear algebra</li>
+                        <li>Statistics</li>
+                        <li>General Math related course support</li>
+                    </ul>
+                </li>
+                <li><strong><a href="https://sites.google.com/umich.edu/umsitutoring/umsi-programming-tutoring#h.rubp6gxxnf" target="_blank">UMSI MADS Programming Peer Tutoring</a></strong><br>
+                    Subject areas include: <br>
+                    <ul>
+                        <li>Linear algebra</li>
+                        <li>Statistics</li>
+                        <li>General Math related course support</li>
+                        <li>SIADS 502 Math Methods I</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Additional Academic Support</h2>
+            <h3>Sweetland Writing Center</h3>
+            <p>The Sweetland Center for Writing offers tutoring through writing workshops and peer consultation, along with writing courses for undergraduates and graduates. Specialized support is also provided for multilingual and international students.</p>
+            <figure class="academic-pics"><img src="images/Pen.jpeg" alt="A fountain pen writing on a piece of paper"></figure>
+            <br>
+            <h3>English Language Institute</h3>
+            <p>ELI offers courses to prepare students to teach English as a second or foreign language.</p>
+            <figure class="academic-pics"><img src="images/Students_talking.jpeg" alt="Five people having an outdoor discussion, three sitted on bench, two standing."></figure>
+            <br>
+            <h3>Success Coaching for Academic Success</h3>
+            <p>The UMSI Academic Success Office offers virtual one-on-one coaching to undergraduate and graduate students, providing support with time management, study skills, and campus resources beyond advising.</p>
+            <figure class="academic-pics"><img src="images/Books.jpeg" alt="Open books on a table with bookshelves in the background"></figure>
+            <br>
+            <h3>Services for Students with Disabilities</h3>
+            <p>Services for Students with Disabilities (SSD) views disability as an essential aspect of diversity and is dedicated to fostering an inclusive and equitable educational environment for students with disabilities.</p>
+            <figure class="academic-pics"><img src="images/Community.jpg" alt="Back view of four people with arms over each other against a radiant sky"></figure>
+            <br>
+        </section>
+    </main>
+    <footer>
+        <p>© Copyrights <span id="year"></span> MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources" target="_blank">UMSI Academic Advising </a></p>
+    </footer>
+
+<!-- Dark mode code from ChatGPT-->
+<script src="js/darkmode.js"></script>
+
+<!-- Year update code from https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+
+</body>
+</html>
