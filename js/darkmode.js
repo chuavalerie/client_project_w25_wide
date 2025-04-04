@@ -33,10 +33,18 @@ function myFunction() {
         button.textContent = "Switch to Light mode";
         button.style.backgroundColor = "white";
         button.style.color = "black";
+
+        // Accessibility updates
+        button.setAttribute("aria-label", "Activate light mode");
+        button.setAttribute("aria-pressed", "true");
     } else {
         localStorage.setItem("dark-mode", "false");
         button.textContent = "Switch to Dark mode";
         button.style.backgroundColor = "#00274c";
         button.style.color = "white";
+
+        // Accessibility updates
+        button.setAttribute("aria-label", "Activate dark mode");
+        button.setAttribute("aria-pressed", "false");
     }
 }
